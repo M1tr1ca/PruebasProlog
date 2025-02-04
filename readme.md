@@ -1,4 +1,4 @@
-# Proyecto de Programación Avanzada
+# Gigel
 
 
 ## Requisitos
