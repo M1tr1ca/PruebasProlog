@@ -36,7 +36,9 @@ peligroso(X) :- dientes_grandes(X), garras_afiladas(X).
 esFelino(X) :- tiene_pelaje(X), tiene_garras(X), tiene_dientes(X).
 
 % Suposiciones sobre animales basadas en características
+suponga(X, tigre) :- var(X), !, fail.
 suponga(X, tigre) :- rayas(X), dientes_grandes(X), esFelino(X).
+suponga(X, cebra) :- var(X), !, fail.
 suponga(X, cebra) :- rayas(X), esFelino(X).
 
 % Consultas de ejemplo para probar las reglas
